@@ -11,7 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        Schema::table('social_media', function(Blueprint $table){
+            $table->string('article_id');
+        });
+                
     }
 
     /**
